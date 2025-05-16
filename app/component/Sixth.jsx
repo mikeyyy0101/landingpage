@@ -3,15 +3,13 @@ import React from 'react'
 
 const Sixth = () => {
   return (
-    <section className="bg-gradient-to-b from-white/5 to-black px-4 md:px-45 sm:px-8 lg:px-45 py-20">
+    <section className="border-b border-white/30 bg-gradient-to-b from-white/5 via-black to-black px-4 md:px-45 sm:px-8 lg:px-45 py-20">
         <article className="flex flex-col items-start max-w-7xl lg:px-20 mx-auto ">
-          <Link href="/">
+          <Link href="/customer">
             <button className="text-sm sm:text-base font-medium cursor-pointer">
               Project and long-term planning &gt;
             </button>
-          </Link>
-
-          <Link href="/">
+            
             <h1 className="mt-5 text-4xl sm:text-5xl font-semibold leading-tight">
               Set the product direction
             </h1>
@@ -25,22 +23,15 @@ const Sixth = () => {
           </h2>
         </article>
 
-        <article
-          className="mt-[-3rem] flex w-full items-center justify-center min-h-screen overflow-hidden"
-          style={{
-            perspective: '2000px',
-            transform: 'rotateY(40deg) rotateX(35deg) skew(10deg)',
-        }}
-        >
-          <div className="w-[100%] mt-[-150]">
+          
+          <article className="flex w-full items-center justify-center h-[600px] perspective-[1000px] -skew-5 opacity-40 mb-10">
             <img
-              src="/coding.png"
+              src="production-direction.png"
               alt="3D coding visual"
-              className="grayscale w-full h-full object-cover rounded-l-xl shadow-xl"
+              className='p-10 md:h-170'
             />
-          </div>
-        </article>
-        <div className="mt-[-100] w-full border-b border-white/30">
+          </article>
+        <div className="mt-[-100] w-full">
       </div>
     </section>
   )

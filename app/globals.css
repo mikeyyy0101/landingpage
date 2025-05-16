@@ -16,7 +16,7 @@
   :root {
     --background: radial-gradient(
       circle at center,
-      rgb(27, 27, 27) 0%,
+      rgb(10, 10, 10) 0%,
       #0a0a0a 40%,
       #000000 100%
     );
@@ -43,7 +43,7 @@
 .marquee-track {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee-scroll 15s linear infinite;
+  animation: marquee-scroll 20s linear infinite;
 }
 
 @keyframes marquee-scroll {
@@ -63,3 +63,14 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
+.my-box {
+  border: 1px solid;
+  border-image: linear-gradient(to top right, rgba(255, 255, 255, 0.303), transparent, transparent) 1;
+}
+
+.my-box2 {
+  border: 5px solid;
+  border-image: linear-gradient(to bottom right, rgb(59, 59, 59), transparent, transparent) 1;
+}
+

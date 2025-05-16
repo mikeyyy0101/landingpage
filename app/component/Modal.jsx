@@ -16,7 +16,7 @@ const Modal = () => {
   const details = [
     {
       id: 1,
-      image: '/img1.jpg',
+      image: 'product-development.png',
       title: 'Purpose-built for product development',
       description:
         'Linear was developed with a specific purpose: to empower product teams to do their best work. Every aspect is intentionally designed to help teams focus on what they do best: Planning, building, and shipping great products. Because of its fit-to-purpose design, Linear is incredibly easy to use, but grows more powerful as you scale. It’s principled where it needs to be, but provides enough flexibility to adapt to your team’s unique way of working.',
@@ -25,38 +25,38 @@ const Modal = () => {
     },
     {
       id: 2,
-      image: '/img2.jpg',
-      title: 'Purpose-built for product development',
+      image: 'move-fast.png',
+      title: 'Designed to move fast',
       description:
-        'Linear was developed with a specific purpose: to empower product teams to do their best work. Every aspect is intentionally designed to help teams focus on what they do best: Planning, building, and shipping great products. Because of its fit-to-purpose design, Linear is incredibly easy to use, but grows more powerful as you scale.',
+        'Linear is built in pursuit of high-performance. With its keyboard-first design, realtime sync, and zero-friction workflows, it delivers a focused experience ideal for fast-paced development environments. Linear’s obsessive focus on speed not only results in improved developer productivity, but also enables teams to move faster. Companies that switch to Linear report a significant uplift in newly filed tickets, vastly reduced issue closing times, and products that ship faster. For us, speed is not just an afterthought. It’s our most important feature',
       saying:
-        '“We’d tried many tools before Linear but none of them felt like they were made for the way we work.”'
+        '“Even as we continue to grow, we’re moving faster because Linear keeps our workflows simple.”'
     },
     {
       id: 3,
-      image: '/img3.jpg',
-      title: 'Purpose-built for product development',
+      image: 'perfection.png',
+      title: 'Crafted to perfection',
       description:
-        'Linear was developed with a specific purpose: to empower product teams to do their best work. Every aspect is intentionally designed to help teams focus on what they do best: Planning, building, and shipping great products.',
+        'We believe that there is a lost art of building software. A craftsmanship that yields products of an exceptional, almost magical, quality. It’s difficult to describe this quality with words and impossible to measure it in numbers, but you can feel it when it’s there. You know it when you experience it. Achieving this product quality is a function of both the talent of its creators and the tools at their disposal. Linear was built in pursuit of giving the best product teams a tool that matches their skill and ambition. A tool with unparalleled speed, precision-engineered robustness, and pixel-perfect UI. A tool that abstracts away any impurity that stands in the way between the creator and their craft. A tool that finally lets product teams focus on what matters most: Bringing back product experiences of the highest level of quality.',
       saying:
-        '“Linear was a breath of fresh air - speedy, snappy, and a pleasure to use.”'
+        '“In a world of clunky, slow, and bloated tools, Linear reverses the script on all three and adds an unrivaled level of delight and polish.”'
     }
   ];
 
   return (
-    <section className="mb-24">
+    <section className="mb-24 px-8 md:px-65">
       {/* Scrollable Card List */}
       <article className="flex gap-6 overflow-x-auto scrollbar-hide px-4 sm:px-6">
         {details.map((detail) => (
           <div
             key={detail.id}
             onClick={() => setSelectedDetail(detail)}
-            className="min-w-[300px] sm:min-w-[350px] lg:min-w-[400px] aspect-square cursor-pointer rounded-lg overflow-hidden bg-black shadow-md"
+            className="min-w-[300px] sm:min-w-[350px] lg:min-w-[350px] aspect-square cursor-pointer rounded-lg overflow-hidden bg-black shadow-md"
           >
             <img
               src={detail.image}
               alt={detail.title}
-              className="grayscale hover:grayscale-0 w-full h-2/3 object-cover"
+              className="w-full h-2/3  object-cover"
             />
             <div className="p-4 h-1/3 flex items-center justify-center">
               <h1 className="text-lg font-semibold text-center text-white">

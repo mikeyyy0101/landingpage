@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Fourth = () => {
@@ -18,9 +19,11 @@ const Fourth = () => {
             world-class product teams from the rest: relentless focus, fast
             execution, and a commitment to the quality of craft.
           </p>
+          <Link href='/customer'>
           <button className="mt-4 inline-block text-white font-light cursor-pointer transition">
             Make the switch &gt;
           </button>
+          </Link>
         </div>
       </article>
     </section>
